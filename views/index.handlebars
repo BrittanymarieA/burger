@@ -5,6 +5,12 @@
     <div class="row col-4">
         <ul>
             {{#each burgers}}
+            <ul>
+                {{#each burgers}}
+                {{burger_name}}
+                {{/each}}
+
+            </ul>
             <div>
                 <form action="/burgers/{{id}}?_method=PUT" method="POST">
                     <button type="submit" class='burger'> {{burger_name}}</button>
@@ -14,16 +20,13 @@
         </ul>
     </div>
 
-</div>
-</div>
 
 
-<div class="row">
-    <div class="col 12">
-        <form action="/burgers" method="POST">
-            <input type="text" id="name" name="burger_name" placeholder="yummy Burger">
-            <button type="submit" class="addBurger">Add Burger</button>
-        </form>
+    <div class="row">
+        <div class="col 12">
+            <form action="/burgers" method="POST">
+                <input type="text" id="name" name="burger_name" placeholder="yummy Burger">
+                <button type="submit" class="addBurger">Add Burger</button>
+            </form>
+        </div>
     </div>
-</div>
-</div>
