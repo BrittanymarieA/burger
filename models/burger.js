@@ -8,18 +8,12 @@ var burger = {
       cb(res);
     });
   },
-  // The variables cols and vals are arrays.
-  createOne: function(cols, vals, cb) {
-    orm.createOne("burgers", cols, vals, function(res) {
-      cb(res);
-    });
-  },
-  updateOne: function(objColVals, condition, cb) {
-    orm.updateOne("burgers", objColVals, condition, function(res) {
-      cb(res);
-    });
-  },
-
+ updateOne: function(id, cb){
+   orm.updateOne("burgers", id, cb);
+ },
+  createOne: function(name, cb){
+    orm.createOne("burgers", name, cb)
+  }
 };
 
 // Export the database functions for the controller (catsController.js).
