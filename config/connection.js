@@ -8,7 +8,7 @@ if(process.env.JAWSDB_URL){
     host: "m7nj9dclezfq7ax1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     port: 3306,
     user: "xpiip5wroxthqsyt",
-    password: "u4sfpqp1ayhq12n1",
+    password: "fauiiq6005idhwwv",
     database: "e7q892bgj9eagv7y"
   
   });
